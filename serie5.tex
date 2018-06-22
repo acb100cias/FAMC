@@ -1,0 +1,97 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, latexsym}
+\usepackage{extpfeil}
+\usepackage[ left=2.5cm, right=2.5cm , bottom= 2.5cm, top=3cm]{geometry}
+\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+    
+    %\fancyhead[R]{\thetitle\ \thepage} % Instead of this
+    %d[R]{\theshorttitle } % do something like this
+    
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tocbibind}
+\usepackage{wallpaper}
+\usepackage{appendix}
+\decimalpoint
+\usepackage{pdfpages}
+
+
+
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 5 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+%\allowdisplaybreaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item En la molécula ion hidrógeno; supongamos que los núcleos se encuentran en las posiciones $\vec{R}_A=-\hat{e}_z\left(\frac{R}{2}\right)$ y $\vec{R}_B=\hat{e}_z\left(\frac{R}{2}\right)$ el electrón en $\vec{r}=\hat{e}_xx+\hat{e}_yy+\hat{e}_zz$ que $\vec{a}$ es el vector de proyección de $vec{r}$ en el plano $XY$ y tiene magnitud $a$. Utilizando las definiciones de las coordenadas elípticas cofocales $\mu$,$\nu$, $\phi$, calcule
+  \begin{enumerate}
+  \item Relaciones para $a$,$x$,$y$ y $z$ en términos de las coordenadas elípticas confocales
+  \item Los factores de escala de transformación: $h_{\mu}$,$h_{\nu}$ y $h_{\phi}$ entre los dos sistemas de coordenadas.
+  \item Una expresión para el volúmen en térmoinos de coordenadas elípticas confocales.
+  \item El operador laplaciano en coordenadas elípticas confocales.
+  \item La ecuación de Schrödinger estacionaria en coordenadas elípticas confocales.
+  \item Demuestre que dicha ecuación es separable en este cojunto de coordenadas.
+  \item Demuestre que la solución para la función que depende del ángulo $\phi$, es similar a la del electrón en el átomo de hidrógeno.
+  \end{enumerate}
+\item En la molécula de ión hidrógeno sobre el electrón  actúan fuerzas electrostáticas debido a los dos núcleos (protones). Como consecuencia, se produce una torca en la posición $\vec{r}$ del electrón. Así se produce un cambio en el tiempo sobre el momento angular orbital, esto es
+$$
+\frac{\mathrm{d}\vec{L}}{\mathrm{d}t}=\vec{\tau}
+$$
+\begin{enumerate}
+\item Calcule la torca total que actúa sobre el electrón debido a los protones.
+\item De acuerdo a las expresiones obtenidas ¿Qué puede decir sobre la evolución temporal de las componentes de $\vec{L}$?
+\end{enumerate}
+\item Para la molécula ion de hidrógeno demuestre que el conmutador $\left[\hat{H},\hat{L}_z\right]=0$ y por lo tanto $\hat{L}_z$ es constante de movimiento.
+\item En la molécula ion de hidrógeno, demuestre que la densidad de probabilidad de encontrar al electrón en $z=0$ es:
+  \begin{enumerate}
+  \item Distinta de cero para el estado cuántico ``de enlace''.
+  \item Cero para el estado cuántico ``de antienlace''.
+  \end{enumerate}
+\item  En la molécula de $H_2^+$ existe una operación de simetría llamada inversión respecto a un punto de inversión ( en este caso, el punto medio  de la distancia entre los dos átomos) a la operación la denotaremos por $\hat{I}_N$ y su efecto sobre el vector de posición del electrón $\vec{r}=(x,y,z)$ es el siguiente
+$$
+\hat{I}_N\vec{r}=-\vec{r}
+$$
+Demuestre que para  esta molécula se satisfacen las siguientes relaciones:
+\begin{enumerate}
+\item $Para H_2^+$, $I_N\phi_+(\vec{r})=\phi_+(\vec{r})$ y $I_N\phi_-(\vec{r})=-\phi_-(\vec{r})$ donde $\phi_+=\eta_+=\eta_g$ y$\phi_-=\eta_-=\eta_u$ son los estados moleculares de enlace y antienlace respectivamente para la molécula.
+\end{enumerate}
+\item Calcule las integrales siguientes que aparecen en el análisis de la molécula $H_2^+$. Comente sus resultados.
+  \begin{enumerate}
+  \item $S=\left<\xi_{1s}\left(\vec{r}_A\right)||\hat{I}||\xi_{1s}\left(\vec{r}_B\right)\right>$ donde $\hat{I}$ es el operador idéntico.
+  \item $J=\left<\xi_{1s}\left(\vec{r}_A\right)||\left(\frac{e^2}{r_B}\right)||\xi_{1s}\left(\vec{r}_B\right)\right>$
+  \item $K=\left<\xi_{1s}\left(\vec{r}_A\right)||\left(\frac{e^2}{r_A}\right)||\xi_{1s}\left(\vec{r}_B\right)\right>$
+  \end{enumerate}
+\item Muestre gráficamente que la energía del estado ``de enlace'' tiene un mínimo y encuentre un valor para el mismo.
+
+\end{enumerate}
+\end{document}

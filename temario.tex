@@ -1,0 +1,130 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, latexsym}
+\usepackage{extpfeil}
+\usepackage[ left=2.5cm, right=2.5cm , bottom= 2.5cm, top=3cm]{geometry}
+\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+    
+    %\fancyhead[R]{\thetitle\ \thepage} % Instead of this
+    %d[R]{\theshorttitle } % do something like this
+    
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tocbibind}
+\usepackage{wallpaper}
+\usepackage{appendix}
+\decimalpoint
+\usepackage{pdfpages}
+
+
+
+%---------------------------------------------------------------------------------------
+\title{Física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.\\ Cubículo 317 Depto de Física FAcultad de Ciencias UNAM}
+\date{\today\\ \sem 2018-2 \gru--- \hor--- \sal---}
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+%\allowdisplaybreaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\part*{Temario}
+
+\section{Introducción}
+\subsection{Materia condensada-Problema de muchos cuerpos}
+\subsection{Aproximación de Born-Oppenheimer}
+\subsection{Partículas idénticas y simetría de intercambio}
+\subsection{Aproximación de Hartree-Fock}
+
+\section{Átomos con $N$ electrónes}
+\subsection{Hamiltoniano}
+\subsection{Aproximación de potencial central de una cuasipartícula}
+\subsection{Suma de momentos angulares}
+\subsection{Estados cuánticos: COnfiguración, términos y símbolos de términos}
+\subsection{Átomo en campos externos y reglas de selección}
+\subsection{Espectros}
+
+\section{Moléculas}
+\subsection{Estados electrónicos de $H_2^{+}$: Aproximación MO-LCAO}
+\subsection{Estados electrónicos de $H_2^{+}$: Aproximación Heitler-London}
+\subsection{Enlace}
+\subsection{Estados electrónicos de moléculas diatómicas con N electrones (configuración, términos y símbolos de términos)}
+\subsection{Enlaces direccionales: Aproximación de orbitales híbridos}
+\newpage
+\section{Estado Sólido}
+\subsection{Introducción}
+\subsection{Enlaces: iónico, covalente, metálico}
+\subsection{Estructura cristalina}
+\subsection{Red de Bravais}
+\subsection{Aproximación de Hartree-FockRed recíproca}
+%\newpage
+\section{Estados electrónicos}
+\subsection{Modelo de cuasipartícula independiente}
+\subsubsection{Gas de electrones libres}
+\subsubsection{Gas de electrones dentro de un potencial periodico}
+\subsection{Bandas electrónicas}
+\subsection{Densidad de estados electrónicos}
+\subsection{Energía total y calor específico electrónico}
+
+\section{Dinámica de la red}
+\subsection{Vibración y fonones en una red bidimensional diatómica}
+\subsection{Densidad de estados vibracionales}
+\subsection{Energía total y calor específico de la red}
+
+\section{Sólidos en campos externos}
+\subsection{Interacción del sólido con campo $\bar{E}$}
+\subsection{Masa efectiva}
+\subsection{Apantallamiento electrónico}
+\subsection{Oscilaciones de plasma}
+\subsection{Interacción de sólidos con campo $\bar{B}$}
+\subsection{Interacción de sólidos con campos electromagnéticos $\bar{A}(\bar{r},t)$ ; $\Phi(\bar{r},t)$ }
+\subsection{Excitaciones elementales y colectivas}
+
+\newpage
+
+\begin{thebibliography}{}
+\bibitem{Levine} Ira N. Levine, Quantum Chemistry. Pearson-Prentice Hall, 2000.
+\bibitem{Pilar} Frank L. Pilar, Elementary Quantum Chemistry, McGraw-Hill Book Company, 1968.
+\bibitem{McQuarrie} Donald A. McCuarrie, Quantum Chemistry, University Science Books, 1983.
+\bibitem{Lowe} Lowe, John P. Quantum Chemistry, Academic Press, 1978.
+\bibitem{arkins} Atkins, P.W. Molecular Quantum Mechanics, Oxford University Press, 1983.
+\bibitem{ashcroft} Ashcroft, Neil W. and N. David Mermin, Solid State Physics, Sounders College Publishing, 1976.
+\bibitem{McKelvey} J. P. McKelvey, Física del estado sólido y semiconductores, ed Limusa, 1976.
+\bibitem{Hall} H.E. HallFísica del estado sólido, ed. Limusa, 1978.
+\bibitem{kittel} Charles Kittel, Introducción al estado sólido, Ed. Reverté, 1998.
+\bibitem{ibach} Harald Ibach and Hans Luth, Solid State Physics, Springer Verlag, 1990.
+\bibitem{kaxiras} Efthimios Kaxiras V. Atomic and electronic structure of solids, Cambridge University Press, 2003.
+\bibitem{Madelung} Otfried Madelung, Introduction to Solid-State Theory, Springer-Verlag, 1978.
+  \bibitem{McQuarrie2} Donald A. McCuarrie, Statistical Mechanics, HArper Collins Publishers, 1976.
+\end{thebibliography}
+
+\part*{Evaluación}
+\begin{enumerate}
+\item Tareas 50 $50\%$
+\item Examenes $50\%$  (Al menos 3). Formado por preguntas y problemas.
+\end{enumerate}
+
+\end{document}

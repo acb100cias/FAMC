@@ -1,0 +1,83 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[]{geometry}
+
+%%%%Titulo%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 1 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item El estado dinámico de un sistema cuántico esta descrito por la función $\Psi(\vec{r},t)$ y su hamiltoniano es $\hat{H}$. Sea $\hat{G}_1$ un operador asociado con una cantidad física del sistema y que actúa sobre la función de estado. Demuestre que el cambio en el tiempo del valor esperado de $\hat{G}_1$ en el estado $\Psi(\vec{r},t)$ es
+  \begin{equation*}
+    \frac{\mathrm{d}\left<\hat{G}_1\right>}{\mathrm{d}t}=\left(\frac{i}{\hbar}\right)\left<\left[\hat{H},\hat{G}_1\right]\right>+\left<\frac{\partial\hat{G}_1}{\partial t}\right>
+  \end{equation*}
+con
+\begin{equation*}
+  \left<\hat{G}_1\right>=\int\Psi^*(\vec{r},t)\hat{G}_1\Psi(\vec{r},t)\mathrm{d}\tau
+\end{equation*}
+donde $\mathrm{d}\tau$ representa el elemento de volúmen del sistema en el espacio de configuración y $\left[\hat{H},\hat{G}_1\right]$ es el conmutador de los dos operadores.
+\item Considere un conjunto de N partículas idénticas, descrito por un hamiltoniano que sólo actúa sobre coordenadas espaciales de la forma
+  \begin{equation*}
+    \hat{H}(\vec{r}_1,\vec{r}_2\dots ,\vec{r}_j\dots ,\vec{r}_k\dots ,\vec{r}_N)=\sum_{j=1}^N\left(\frac{\hat{p}_j^2}{2m}+V\left(\vec{r}_j\right)\right)+\frac{1}{2}\sum_{j\neq k}V\left(\left|\vec{r}_j-\vec{r}_k\right|\right)
+  \end{equation*}
+Sea $\hat{P}_{jk}$ el operador que intercambia las coordenadas espaciales y de espín de las partículas $j$ y $k$, esto es
+\begin{equation*}
+  \hat{P}_{jk}\varphi\left(x_1, x_2\dots ,x_j\dots ,x_k\dots ,x_N\right)=\varphi\left(x_1, x_2\dots ,x_j\dots ,x_k\dots ,x_N\right)
+\end{equation*}
+con $x_j=(\vec{r}_j,S_j)$
+
+Demostrar que:
+\begin{enumerate}
+\item $\hat{P}_{jk}$ es hermitiano.
+\item $\hat{P}_{jk}$ conmuta con el hamiltoniano.
+\item $\dfrac{\mathrm{d}\hat{P}_{jk}}{\mathrm{d}t}=0$.
+\item La simetría de la función de estado $\varphi\left(x_1, x_2\dots ,x_j\dots ,x_k\dots ,x_N\right)$ es una constante de movimiento.
+\end{enumerate}
+\item Construya una función antisimétrica para un sistema de 3 electrones sin interacción entre ellos.
+\item Para un átomo de N electrones, la función de onda tipo Determinante de Slater puede escribirse como
+  \begin{equation*}
+    \Phi(x_1,x_2\dots ,x_N)=\hat{A}\left[\xi_1\left(x_1\right)\xi_2\left(x_2\right)\dots \xi_N\left(x_N\right)\right]=\hat{A}\prod_{j=1}^N\xi_j(x_j)
+  \end{equation*}
+donde el operador $\hat{A}$ esta definido por
+\begin{equation*}
+  \hat{A}=\left(\frac{1}{N!}\right)^{\frac{1}{2}}\sum_{R=0}^{N!-1}(-1)^R\hat{P}_R
+\end{equation*}
+donde $hat{P}_R$ representa la permutación $R$-ésima del producto de espín-orbitales de una partícula que intervienen en el desarrollo del Determinante de Slater.
+
+Demostrar que el operador  $\hat{A}$ tiene las siguientes propiedades:
+\begin{enumerate}
+\item $\hat{A}^2=\sqrt{N!}\hat{A}$
+\item $\hat{A}=\hat{A}^t$, es autoadjunto.
+\item $\hat{A}\hat{\Omega}=\hat{\omega}\hat{A}$ donde $\hat{\Omega}$ es un operador simétrico ante el intercambio de coordenadas espín-espaciales de 2 partículas.
+\end{enumerate}
+\item Revisar y reproducir la deducción de las funciones de distribución Térmico-estadisticas de Fermi-Dirac y bose-Einstein de partículas sin interacción entre ellas.
+\end{enumerate}
+\end{document}

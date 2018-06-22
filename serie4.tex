@@ -1,0 +1,72 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[]{geometry}
+
+%%%%Titulo%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 4 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%\maketitle
+\begin{enumerate}
+\item Calcule la energía del primer estado excitado del átomo de helio, usando perturbaciones independientes del tiempo, para estados degenerados.
+\item Una base  de vectores propios para $\hat{J}^2=\left(\hat{J}_1+\hat{J}_2\right)^2$ y su proyección $\hat{J}_z=\hat{J}_{z_1}\hat{J}_{z_2}$ puede representarse como $\left||jm\right>$, de modo que $\hat{J}^2\left||jm\right>=j\left(j+1\right)\hbar^2\left||jm\right>$ y $\hat{J}_z\left||jm\right>0m\hbar\left||jm\right>$. 
+
+El valor propio máximo de la proyección en unidades de $\hbar$ es $m_{\max}=(m_1+m_2)_{\max}=j_1+j_2$
+\begin{enumerate}
+\item ¿Cual es el valor máximo de $j$?
+\item Encontrar el valor mínimo de $j$ utilizando el hecho de que el número de estados en la representación de estados propios  de $\hat{J}_1$ y $\hat{J}_2$ representado por $\left||j_1m_1\right>\left||j_2m_2\right>$ y en la representación de $\left||jm\right>$ se conserva; esto es 
+\begin{equation*}
+\sum_{j_{\min}}^{j_{max}}\left(2j+1\right)=(2j_1+1)(2j_2+1)
+\end{equation*}
+\end{enumerate}
+\item Dedúzca el símbolo de término para el estado base para los siguientes átomos
+  \begin{enumerate}
+  \item Zirconio, cuya configuración electrónica es  $[KR](4d)^2(5s)^2$.
+  \item Paladio, cuya configuración electrónica es $[KR](4d)^{10}$
+  \end{enumerate}
+\item Sugiera justificadamente con qué átomos podría realizarse un experimento que usando efecto Zeeman normal permita determinar la razón $\frac{e}{m}$ para el electron
+\item Para el experimento de Stern-Gerlach, átomos de Plata se calienta  a $1000 K$. Después de un haz delgado de dichos átomos  se pasan a través  de u campo magnético que varía en el espacio con un gradiente  de $0.75\frac{Weber}{cm}$ en una distancia de $10 cm$, en la dirección del eje $Z$. El haz después de salir  del campo viaja $12 cm$ antes de golpear una placa fotográfica.
+  \begin{enumerate}
+  \item Calcule la separación de las dos componentes del haz sobre la pantalla. Use la velocidad promedio del haz de la relación $\frac{1}{2}m<v>^2=\frac{3}{2}K_BT$.
+  \item Si el experimento de realiza con los siguientes átomos: $Ca( ^1S_0)$, $Ti( ^3F_2)$, $As( ^4S_{\frac{3}{2}})$ ;¿Cuántas líneas  o manchas se observarán en la pantalla?
+  \end{enumerate}
+\item Calcule el factor  de Landé, $g(L,S,J)$ y el momento magnético $\vec{\mu}_J$ de átomos en los estados $^2D_{\frac{5}{2}}$, $^2D_{\frac{3}{2}}$ y $^2F_{\frac{7}{2}}$.
+\item Demuestre que cuando un átomo con momento angular total $\vec{J}$, se coloca  en un campo magnético constante $\vec{B}=B_0\hat{e}_z$, el momento angular precesa alrededor del campo magnético con una frecuencia $\omega=\frac{eB_0}{2m}g(L,S,J)$.
+\item En los siguientes $3$ casos , el átomo tiene una transición entre dos estados cuánticos y se encuentra sometido a un campo magnético constante. Encontrar en cada caso, el número de líneas  que se observan en precencia de dicho campo.
+  \begin{enumerate}
+  \item Cadmio en la transición $^1P-^1D$ cuya longitud de onda  sin campo es $\lambda=6438.47$ angtroms.
+  \item Doblete de sodio con longitudes de onda $\lambda_1=5889.96$ angtroms y $\lambda_2=5895.93$ angtroms, correspondientes a transiciones  $^2P_{\frac{3}{2}}-^2S_{\frac{1}{2}}$ y $^2P_{\frac{1}{2}}-^2S_{\frac{1}{2}}$
+  \item La línea con $\lambda=4722.16$ angtroms del zinc correspondiente a la transición $^3P_{1}-^3S_{1}$.
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, latexsym}
+\usepackage{extpfeil}
+\usepackage[ left=2.5cm, right=2.5cm , bottom= 2.5cm, top=3cm]{geometry}
+\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+    
+    %\fancyhead[R]{\thetitle\ \thepage} % Instead of this
+    %d[R]{\theshorttitle } % do something like this
+    
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tocbibind}
+\usepackage{wallpaper}
+\usepackage{appendix}
+\decimalpoint
+\usepackage{pdfpages}
+
+
+
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 8 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+%\allowdisplaybreaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item En una red de Bravais cuya celda unitaria es cúbica centrada en el cuerpo, los puntos de una red en dicha celda estan dadas por los vectores base: $\bar{a}_1=\frac{a}{2}(\hat{e}_y+\hat{e}_z-\hat{e}_x)$, $\hat{a}_2=\frac{a}{2}(\hat{e}_z+\hat{e}_x-\hat{e}_y)$, $\hat{a}_3=\frac{a}{2}(\hat{e}_x+\hat{e}_y-\hat{e}_z)$ donde los vectores $\hat{e}_x$, $\hat{e}_y$, $\hat{e}_z$ son la base canónica del espacio cartesiano. Encuentre los vectores vase para la red recíproca y el volúmen de la celda en dicha red e interprete a que tipo de red cprresponde.
+\item En el modelo de erlectrón libre en una caja de volumen $V$:
+  \begin{enumerate}
+  \item Resuelva la ecuación de Schrödinger por separación de variables  en coordenadas cartesianas.
+  \item Demuestre que una solución tipo onda está normalizada por el factor $\left(\frac{1}{\sqrt{V}}\right)$ donde $V$ es el volumen del sólido.
+  \item Calcule la degeneración de los niveles de energía.
+  \item Calcule la energía del estado base de un sólido con $N$ electrones.
+  \end{enumerate}
+\item En el modelo de Kronig-Penney la relación de dispersión de las bandas de energía viene dada por
+$$\epsilon(k)=\frac{\hbar^2\pi^2Q^2}{2ma^2}\left(1-\frac{2}{P_1}+\left(-1\right)^Q\left(\frac{2\cos ka}{P_1}\right)\right)
+$$
+con $Q$ un entero y $P_1$, $a$ constantes. Calcule
+\begin{enumerate}
+\item La velocidad del electrón en la banda
+\item La masa efectiva $m^*$ del electrón en la banda
+\item La brecha de energía ŕohibida entre dos bandas.
+\end{enumerate}
+\item  Resolver el problema de un electrón moviendose en un potencial bidimensional dado por
+$$V(x,y)=4U_0\left(\cos\left(\frac{2\pi x}{a}\right)+\cos\left(\frac{2\pi y}{a}\right)\right)
+$$
+y encontrar la diferencia de energías de la franja prohibida.
+\item Una cadena lineal de átomos de masa $M$ se encuentran enlazados por potenciales de tipo oscilador armónico
+  \begin{enumerate}
+  \item Escriba la ecuación de movimiento de las oscilaciones de la cadena.
+  \item Encuentre la expresión de la frecuencia como función del número de onda o momento lineal de las vibraciones.
+  \end{enumerate}
+\item Considere la oscilación transversal, a lo largo del eje $z$ de los puntos de una red cuadrada, distribuida en el plano $x-y$, monoatómica. Sea $u_{lm}$ el desplazamiento en la dirección $z$, a partir de su posición de equilibrio, del átomo que se encuentra en el renglon $l$ y la columna $m$ de la red. Lamasa de todos los átomos es $M$ . La constante de fuerza entre los vecinos más cercanos es $\alpha$ y la separación interatómica de equilibrio es $a$
+  \begin{enumerate}
+  \item Demostrar que la ecuación de movimiento es
+$$M\frac{\mathrm{d}^2u_{lm}}{\mathrm{d}t^2}=\alpha\left(\left(u_{l+1 m}+u_{l-1m}-2u_{lm}\right)+\left(u_{l m+1}+u_{lm-1}-2u_{lm}\right)\right)
+$$
+\item Pruebe una solución de la forma
+$$
+u_{lm}=u_0 e^{i\left(lq_xa+mq_ya-\omega t\right)}
+$$
+y encuentre la relación de dispersión $\omega(q_x,q_y)$.
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

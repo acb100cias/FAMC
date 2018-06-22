@@ -1,0 +1,103 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, latexsym}
+\usepackage{extpfeil}
+\usepackage[ left=2.5cm, right=2.5cm , bottom= 2.5cm, top=3cm]{geometry}
+\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+    
+    %\fancyhead[R]{\thetitle\ \thepage} % Instead of this
+    %d[R]{\theshorttitle } % do something like this
+    
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tocbibind}
+\usepackage{wallpaper}
+\usepackage{appendix}
+\decimalpoint
+\usepackage{pdfpages}
+
+
+
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 9 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+%\allowdisplaybreaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Suponga que se coloca un metal en un campo eléctrico $\bar{E}$
+  \begin{enumerate}
+  \item Usando el modelo de electrón libre y la mecánica cuántica: Calcule $\dfrac{\mathrm{d}\hat{P}}{\mathrm{d}t}$ donde $\hat{P}$ es el operador vectorial de momento lineal.
+    \item Para un electrón en un potencial periódico, calcular la evolución temporal de operador vectorial $\hat{P}_Q$.
+  \end{enumerate}
+\item  \begin{enumerate}
+\item Demostrar que cuando una partícula con masa $m$ y carga $q$ se coloca dentro de un campo electromagnético, que puede obtenerse de potenciales escalar $\Phi(\bar{r},t)$ y vectorial $A(\bar{r},t)$, el momento lineal del sistema es $\bar{P}_2=\bar{p}+qA(\bar{r},t)$, donde $\bar{p}$ es el momento de la partícula.
+\item Escriba la hamiltoniana del sistema  
+\end{enumerate}
+\item Considere un campo magnético homogéneo $\bar{B}=B\hat{e}_z$,  $B=\text{constante}$. El potencial vectorial $\bar{A}=(0,xB,0)$ está asociado al campo magnético. Un electrón libre que se mueva en dicho campo viene descrito por el hamiltoniano
+  $$
+\hat{H}=\dfrac{1}{2m}\left(\bar{p}-e\bar{A}\right)^2
+$$
+\begin{enumerate}
+\item Pruebe la soluciónn $\Psi(\bar{r})=\phi(x)e^{(i[k_y y+k_z z])}$ encuentre la ecuación que debe satisfacer $\phi(x)$
+\item Demuestre que la ecuación de $\phi$, puede reducirse a la del oscilador armónico, definiendo la frecuencia del ciclotrón como $\omega_c=\dfrac{eB}{m^*c}$ y $x_k=-\left(\dfrac{\hbar c}{eB}k\right)$, donde $c$  es la velocidad de la luz en el vacío.
+\item Encontrar las funviones de estado y las energías propias del electrón.
+\item Encontrar ek número de estados  en el espacio $\bar{k}$.
+\item Encontrar la densidad de estados en el espacio de energía.
+\end{enumerate}
+\item Al colocar unconductor o un semiconductor en un campo eléctrico $\bar{E}$ y un campo magnético $\bar{B}$, transversales entre si, esto es $\bar{E}\cdot\bar{B}=0$, se produce el efecto Hall clásico
+\begin{enumerate}
+\item Expliqe en qué consiste el fenómeno (Condidere materiales que conducen por electrones y/o por hoyos.
+\item Calculela constante de Hall en términos de las magnitudes de los campos.
+\item En el caso de semiconductores que conducen por hoyos, explique si hay diferencia en el valor de la constante de Hall o en su signo.
+\end{enumerate}
+\item Al colocar un electrón copn masa efectiva $m^*$ en un campo magnético, se ve afectado por la fuerzad e Lorentz.
+  \begin{enumerate}
+  \item Escriba las ecuaciones de movimiento del electrón.
+  \item Resuelva el sistema de ecuaciones resultantes.
+  \item Encuentre la frecuencia $\omega_c$ con que los electrones giran, a la cual se llama frecuencia de ciclotrón.
+  \item Analice el problema de resonancia  cuando al electrón se le coloca simultáneamente al campo magnético dentro de un campo eléctrico oscilante y con frecuencia $\omega$.
+  \item A partir de lo anterior describa una forma experimental con la que puede determinarse $m^*$.
+  \end{enumerate}
+\item Un modelo para describir las oscilaciones de plasma en un gas de electrones con interacción electrón-electrón, consiste en un conjunto de electrones libres que se  distribuyen con densidad de carga contínua $\rho(\bar{r},t)$. Suponiendo que la densidad de equilibrio termofinémico en una región del espacio es $\rho_0$ y que cuando en dicha región se siente el efecto de la presencia de otros electrones la densidad de carga se modifica a $\rho(\bar{r},t)$ . Inmediatamente aparece  un campo eléctrico que produce fuerzas que tratan de restituir el estado de equilibrio termodinámico que junto con la inercia de los electrones  produce una oscilación de la carga en la región que nos interesa. La oscilación se propaga rápidamente a todo el sólido obteniendose una oscilación colectiva de todos los electrónes.
+  \begin{enumerate}
+  \item Escriba la ecuación de Gauss en forma diferencial para la densidad de carga neta $\rho(\bar{r},t)\equiv\Delta\rho$:
+  \item Escriba la ecuación de continuidad;
+  \item Escriba la ecuación de movimiento de cada electrón;
+  \item Suponiendo que $\rho(\bar{r},t)-\rho_0\ll \rho_0$ (perturbaciones pequeñas), linealice la ecuación de continuidad a primer orden;
+  \item Escriba la ecuación de movimiento de cada electrón para la carga neta $\Delta\rho$;
+  \item Identifique la frecuencia con que oscila cada electrón $\omega_p$ a la que se denomina frecuencia de plasma de los electrones. 
+  \end{enumerate}
+
+
+\end{enumerate}
+\end{document}

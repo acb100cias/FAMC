@@ -1,0 +1,74 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[]{geometry}
+
+%%%%Titulo%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 3 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Demuestre que todas las componentes  del momento angular orbital para una particula satisfacen
+  \begin{equation*}
+    \left[\hat{L}_{\alpha},f\left(\vec{r}\right)\right]=\hat{L}_{\alpha}f\left(\vec{r}\right)
+  \end{equation*}
+donde $\alpha$ toma valores en el conjunto $\{x,y,z\}$ y $f\left(\vec{r}\right)$ es una función de coordenadas derivable.
+\item Demuestre que el operador  de momento angular orbital $vec{L}=\sum_{j=1}^{N} \vec{L}_j $ conmuta con el hamiltoniano sin interacción de N partículas
+  \begin{equation*}
+    \hat{H}=\sum^{N}_{j=1}\left(\frac{\hat{p}^2_j}{2m}-\frac{kZe^2}{r_j}\right)
+  \end{equation*}
+\item Demuestre que el operador de momento angular orbital $\vec{L}_{jk}=\vec{L}_j+\vec{L}_k$ conmuta con el operador de interacción electrón-electrón de Nelectrones
+  \begin{equation*}
+    \hat{V}=\frac{1}{2}\sum^2_{j\neq k}\frac{ke^2}{\left|\vec{r}_j-\vec{r}_k\right|}
+  \end{equation*}
+\item Utilizando los resultados de los problemas (2) y (3) demuestre que el operador  de momento angual orbital total para un átomo de N electrones conmuta con el hamiltoniano electrostático para dichos sistema dado por
+  \begin{equation*}
+    \hat{H}^{\left(0\right)}=\sum^{N}_{j=1}\left(\frac{\hat{p}^2_j}{2m}-\frac{kZe^2}{r_j}\right)+\frac{1}{2}\sum^2_{j\neq k}\frac{ke^2}{\left|\vec{r}_j-\vec{r}_k\right|}
+  \end{equation*}
+\item Demuestre  que para un átomo de N electrones el  operador de momento angualr total $\vec{J}=\vec{L}+\vec{S}$, donde $\vec{L}=\sum_{j=1}^N\vec{L}_j$ y $\vec{S}=\sum_{j=1}^N\vec{S}_j$, conmuta con el hamiltoniano de interacción espín-órbita dado por
+  \begin{equation*}
+    \hat{H}_{LS}=\sum_{j=1}^{N}F(r_j)\vec{L}_j\cdot\vec{S}_j
+  \end{equation*}
+\item  Demuestre que $\vec{J}$ conmuta con el hamiltoniano de un átomo de N electrones que incluye la interacción espín-órbita.
+\item Determine los símbolos de términos que que represntan a las siguientes configuraciones electrónicas:
+  \begin{enumerate}
+  \item $np^1$
+  \item $np^5$
+  \item $nsnp$
+  \item Determine en cada caso el termino que corresponde al estado base.
+  \end{enumerate}
+\item Demostrar que los símbolos de términos de las configuraciones  electrónicas $np^2$ y $np^4$
+ coinciden.
+\item Los símbolos de términos para una configuración electrónica $nd^2$ son: $^1S$, $^1D$, $^1G$, $^3P$ , $^3F$. Calcule los valores del momento angular total $J$ asociado con cada uno de éstos términos y determine cuál de ellos representa al estado base.
+\item Demuestre que para funciones de estado hidrogenoides de un electrón el operador directo de energía potencial (de Hartree-Fock) es un operador central, esto es, actúa sólo  sobre la coordenada $r$ (distancia)
+\end{enumerate}
+\end{document}

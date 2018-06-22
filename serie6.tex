@@ -1,0 +1,102 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish, es-tabla]{babel}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, latexsym}
+\usepackage{extpfeil}
+\usepackage[ left=2.5cm, right=2.5cm , bottom= 2.5cm, top=3cm]{geometry}
+\usepackage{fancyhdr}
+%    \pagestyle{fancy}
+    
+    %\fancyhead[R]{\thetitle\ \thepage} % Instead of this
+    %d[R]{\theshorttitle } % do something like this
+    
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{pifont}
+\usepackage{makeidx}
+\makeindex
+\usepackage{tocbibind}
+\usepackage{wallpaper}
+\usepackage{appendix}
+\decimalpoint
+\usepackage{pdfpages}
+
+
+
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 6 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+%\allowdisplaybreaks
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Como consecuencia del método variacional en la molécula de hidrógeno se encuentran dos estados moleculares representados por $\phi_{_{+}}(1,2)$ en el que la molécula es estable  y otro representado por $\phi_{_{-}}(1,2)$ en el que la molécula es inestable. Demuestre que la función de espín $\chi_{_{+}}$ asociada con el estado molecular $\phi_{_{+}}(1,2)$ es la función propia del operador $S_z$, con valor propio $M_s=0$ mientras que $\chi_{_{-}}$ asociada con el estado molecular $\phi_{_{-}}(1,2)$ es la función propia del mismo operador, con valores propios $M_s=1,0.-1$.
+\item Calcule las siguientes integrales que aparecen en el cálculo de la energía y los estados moleculares  mediante el método variacional en la aproximación de Heitler y London o de enlace covalente en la molecula de Hidrógeno:
+  \begin{enumerate}
+  \item  $J_1=\left<\xi_A(r_1)\xi_B(r_2)\left|\dfrac{ke^2}{r{B1}}\right|\xi_A(r_1)\xi_B(r_2)\right>$
+  \item $J_2=\left<\xi_A(r_1)\xi_B(r_2)\left|\dfrac{ke^2}{r{A2}}\right|\xi_A(r_1)\xi_B(r_2)\right>$
+  \item $J_3=\left<\xi_A(r_1)\xi_B(r_2)\left|\dfrac{ke^2}{r{B1}}\right|\xi_A(r_2)\xi_B(r_1)\right>$
+  \item $J_4=\left<\xi_A(r_1)\xi_B(r_2)\left|\dfrac{ke^2}{r{A2}}\right|\xi_A(r_2)\xi_B(r_1)\right>$
+  \end{enumerate}
+puede utilizar resultados de la molécula ion hidrógeno siempre que lo haga con cuidado.
+\item Puede extenderse el método variacional tomando como función de prueba una combinacion lineal de funciones de estado atómicas para $N$ electrones en el potencial de $q$ núcleos, esto es 
+$$
+\phi(1,2,3,\dots ,N)=\sum_{j=1}^qC_j\Omega_j(1,2,3,\dots N)
+$$
+donde $\phi(1,2,3,\dots ,N)$ representa el estado molecular y $\Omega_j(1,2,3,\dots N)$ representa los estados atómicos de $N$ electrones respectivamente y son ortonormales. Los coeficientes $C_j$ son parámetros por determinar. A las funciones $phi$ se les exige que satisfagan condiciones de ortonormalización.
+\begin{enumerate}
+\item Construya la funcional $F[C_J]$ que debe usarse en el método variacional.
+\item Demostrar que la condición $\delta F=0$ conduce a un sistema homogéneo de $q$ ecuaciones algebráicas en los parámetros y la energía.
+\item Mencione esquematica y culaitativamente el camino a seguir para resolver  el sistema homogéneo de ecuaciones  y como determinar los valores de energía del estado molecular  y las funciones de onda correspondientes
+\end{enumerate}
+\item En la molécula de $H_2$ existe una operación de simetría llamada inversión resécto al punto de inversión (en este caso el punto medio de la distancia entre dos átomos) a esta operacoión la denotaremos por $\hat{I}_N$ y su efecto sobre un vector de posición de cada uno de los electrones $\vec{r}=(x,y,z)$ es el siguiente
+$$
+\hat{I}_N\vec{r}=-\vec{r}
+$$
+Demuestre que para la molécula referida se satisfacen las siguientes relaciones:
+\begin{eqnarray*}
+I\phi_{_{+}}(1,2)&=&\phi_{_{+}}(1,2)\\
+I\phi_{_{-}}(1,2)&=&-\phi_{_{-}}(1,2)
+\end{eqnarray*}
+donde $\phi_{_{+}}$ y $\phi_{_{-}}$ son los estados moleculares de enlace y de antienlace respectivamente para la molécula.
+\item Una molécula diatómica homonuclear en su estado base molecular tiene la siguiente configuración electrónica
+$$
+1\sigma^2_g1\sigma^2_u2\sigma^2_g2\sigma^2_u1\pi^4_u3\sigma^2_g1\pi^2_g
+$$
+\begin{enumerate}
+\item ¿Cuál es el orden del enlace?
+\item ¿Cuál es la multiplicidad del espín?
+\item ¿Cuál es la diferencia sobre la estabilidad de la molécula al ionizarla eliminando un electron del orbital molecular $1\pi_g$ o al hacerlo del orbital molecular $3\sigma_g$?
+\end{enumerate}
+\item
+  \begin{enumerate}
+  \item Investigar en qué consiste el método de construcción de orbitales híbridos y aplicarlo para:
+  \item Construir orbitales híbridos tipo $sp_z$,$\xi_1$ y $\xi_2$.
+  \item Construir orbitales híbridos tipo $sp^2$,$\xi_1$, $\xi_2$ y $\xi_3$ usando los orbitales $s$, $p_x$ y $p_z$
+  \end{enumerate}
+
+\end{enumerate}
+\end{document}

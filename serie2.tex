@@ -1,0 +1,95 @@
+\documentclass[]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsthm,amssymb}
+\usepackage[]{geometry}
+
+%%%%Titulo%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------------------
+\title{Problemas de física atómica y materia condensada}
+\author{Augusto Cabrera Manuel.}
+\date{\today\\ \ser 2 \sem 2018-2 }
+
+%-----------------------------------------------------------------------------------------
+\newtheorem{definicion}{Definición}
+\newtheorem{ejemplo}{Ejemplo}
+\newtheorem{teorema}{Teorema}
+\newtheorem{lema}{Lema}
+\newtheorem{prop}{Proposición}
+\newtheorem{af}{Afirmación}
+\newtheorem{coro}{Corolario}
+\newtheorem{obs}{Observación}
+\newtheorem{casos}{Caso}
+\newcommand\sem{\bf Semestre: }
+\newcommand\gru{\bf Grupo: }
+\newcommand\hor{\bf Horario: }
+\newcommand\sal{\bf Salón: }
+\newcommand\ser{\bf Serie: }
+
+\renewcommand{\spanishrefname}{Bibliografía.}
+\renewcommand{\spanishproofname}{Prueba.}
+\def\sectionautorefname{section}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item Demuestre que el determinante de Slater  para el estado base  del helio puede representarse como el producto de dos funciones : una parte dependiente de coordenadas espaciales que es simétrica y la otra que depende de coordenadas de espín que es antisimétrica, respecto al intercambio de coordenadas espín-espaciales de los dos electrones
+\item Cuál es el valor del espín total del átomo de Helio
+  \begin{enumerate}
+  \item En estado base
+  \item En un estado excitado
+  \end{enumerate}
+\item Determine la energía del estado base del helio mediante:
+  \begin{enumerate}
+  \item El método de perturbaciones, realizando los desarrollos con detalle.
+  \item El método variacional, usando la carga del núcleo apantallada como parámetro. Realice las integrales necesarias con el mayor detalle posible.
+  \end{enumerate}
+\item Para el átomo de Litio:
+  \begin{enumerate}
+  \item Escriba  la función de onda del estado base
+  \item Demuestre que dicha función es función propia del operador proyección $z$ del operador del espín total $S_z=S_{1z}+S_{2z}+S_{3z}$
+  \item Encuentre los valores propios del operador $\hat{S}_z$ en el estado base.
+  \end{enumerate}
+\item Para un sistema de $3$ electrones ; calcule el valor propio  del operador $S_z$ en el estado representado por la función de espín
+  \begin{equation*}
+    \Xi=\frac{1}{3!}\left[\alpha(1)\alpha(2)\beta(3)+\alpha(1)\beta(2)\alpha(3)+\beta(1)\alpha(2)\alpha(3)\right]
+  \end{equation*}
+donde $\alpha$ representa el estado con proyección de espín $\frac{\hbar}{2}$ y $\beta$ el estado de proyección de espín $-\frac{\hbar}{2}$.
+\item Para un átomo de 3 electrones:
+  \begin{enumerate}
+  \item Si exigimos que el determinante de Slater esté normalizado ¿Qué condiciones deben exigirse a las funciones espín-orbitales?Considerando que los espín-orbitales y sus ocupaciones son
+    \begin{equation*}
+      \xi_1(x_1)=\xi_1(vec{r}_1)\alpha_1\qquad\xi_2(x_2)=\xi_2(vec{r}_2)\beta_2\qquad\xi_3(x_3)=\xi_3(vec{r}_3)\alpha_3
+    \end{equation*}
+Calcular simbólicamente los valores esperados  para cada uno de los estados con hamiltonianos de una partícula, haciendo ver explícitamente  el efecto de la parte de espín.
+\item hacer un calculo similar en cada una de las integrales directas y de intercambio.
+
+  \end{enumerate}
+\item En este ejercicio $\alpha$ y $beta$ representan funciones propias del operador $\hat{S}_z$ mientras que $f$ y $g$ son funciones generales de coordenadas espaciales , de las cuales no se tiene más información. Las etiquetas  etre paréntesis indican coordenadas de partículas. De las siguientes funciones
+  \begin{eqnarray*}
+    f(1)g(2)\alpha(1)\alpha(2)\\
+    f(1)f(2)\left[\alpha(1)\beta(2)-\beta(1)\alpha(2)\right]\\
+    f(1)f(2)f(3)\beta(1)\beta(2)\beta(3)\\
+    \left[f(1)g(2)-g(1)f(2)\right]\left[\alpha(1)\beta(2)-\beta(1)\alpha(2)\right]\\
+    r^2_{12}e^{-\alpha\left[r_1+r_2\right]}\\
+    e^{-\alpha\left[r_1-r_2\right]}
+  \end{eqnarray*}
+cuáles son:
+
+    \begin{enumerate}
+    \item Completamente simétricas;
+    \item Completamente asimétricas;
+    \item En cuáles falta informaciónpara clasificarlas en los términos anteriores
+    \end{enumerate}
+  \item
+    \begin{enumerate}
+    \item Calcule en forma explícita y directa el promedio cuántico del operador $\left(\dfrac{e^2}{\vec{r}_2-\vec{r}_3}\right)$ con las funciones spin-orbitales $\hat{A}\left[\xi_1(x_1)\xi_2(x_2)\xi_3(x_3)\right]$
+    \item Calcule los términos del promedio cuántico calculado en (a), distintos de cero.
+    \end{enumerate}
+
+\end{enumerate}
+\end{document}
